@@ -1,1 +1,82 @@
-<div>Hello</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="Soundboard" content="This is my test soundboard page">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Soundboard</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href='https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap'>
+
+
+</head>
+
+<body>
+
+	<nav class="">
+		<img class="logo" src="RJB-LOGO-V2.jpg" alt="Logo">
+
+	</nav>
+
+	<div class="color-bar">
+
+	</div>
+
+	<header>
+		<h1>Soundboard</h1>
+
+		<p>Click the buttons to play the audio.</p>
+	</header>
+
+	<div class="board-area">
+		<ul class="btn-group">
+			<li class="btn" onclick="play('audio1')">Sound One</li>
+			<li class="btn" onclick="play('audio2')">Sound Two</li>
+			<li class="btn" onclick="play('audio3')">Sound Three</li>
+			<li class="btn" onclick="play('audio4')">Sound Four</li>
+			<li class="btn" onclick="play('audio5')">Sound Fave</li>
+			<li class="btn" onclick="play('audio6')">Sound Six</li>
+			<li class="btn" onclick="play('audio7')">Sound Seven</li>
+			<li class="btn" onclick="play('audio8')">Sound Eight</li>
+		</ul>
+	</div>
+
+
+	<audio id="audio1" class="alink" src="assets/sounds/man-scream-01.mp3"></audio>
+
+	<audio id="audio2" class="alink" src="https://www.soundjay.com/human/sounds/man-scream-02.mp3"></audio>
+
+	<audio id="audio3" class="alink" src="https://www.soundjay.com/human/sounds/man-scream-03.mp3"></audio>
+
+	<audio id="audio4" class="alink" src="https://www.soundjay.com/human/sounds/man-scream-ahh-01.mp3"></audio>
+
+	<audio id="audio5" class="alink" src="https://www.soundjay.com/human/sounds/man-screaming-01.mp3"></audio>
+
+	<audio id="audio6" class="alink" src="https://www.soundjay.com/human/sounds/woman-scream-01.mp3"></audio>
+
+	<audio id="audio7" class="alink" src="https://www.soundjay.com/human/sounds/woman-scream-02.mp3"></audio>
+
+	<audio id="audio8" class="alink" src=""></audio>
+
+
+	<div id="content">
+		<canvas id="canvas"></canvas>
+	</div>
+
+	<footer>
+		<span>This is the footer</span>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js">
+
+	</script>
+
+</body>
+
+</html>

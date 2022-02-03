@@ -1,0 +1,162 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/**************************************/
+
+body {
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+
+     /* border: 2px solid tomato; */
+}
+
+
+nav {
+     background-color: #ffffff;
+     height: 5.7em;
+
+     /* border: 2px solid tomato; */
+}
+
+footer {
+     /* margin-top: 15vh; */
+     padding-top: 3%;
+     text-align: center;
+     color: #FCC42C;
+     background-color: #2B3643;
+     box-shadow: 0 50vh 0 50vh #2B3643;
+
+     /* border: 2px solid tomato; */
+}
+
+
+/**************************************/
+
+.logo {
+     width: 10em;
+     padding-left: 1em;
+     padding-top: 1.5em;
+}
+
+.menu {
+     width: 35px;
+     height: 5px;
+     background-color: #ffffff;
+     margin: 3px 0;
+}
+
+header {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+.color-bar {
+     height: 55px;
+     background-color: #AAAFB3;
+}
+
+h1 {
+     font-size: 50px;
+     font-family: 'Open Sans', sans-serif;
+     font-weight:900;
+     color: #292A32;
+
+}
+
+p {
+     margin-top: -20px;
+     font-family: 'Open Sans', sans-serif;
+     color: #292A32;
+}
+
+.board-area {
+     background-color: #ffffff;
+     padding-bottom: 5em;
+
+     /* box-shadow: 0 50vh 0 50vh #FEFFFE; */
+
+     /* border: 2px solid tomato; */
+}
+
+.btn-group {
+     max-width: 650px;
+     margin: auto;
+     padding-top: 15px;
+     padding-bottom: 15px;
+
+     /* border: 2px solid tomato; */
+
+     display: flex;
+     flex-flow: row wrap;
+}
+
+#canvas {
+     position:relative;
+     height: 100px;
+     width: 100%;
+     /* background-color: #3ECEFB; */
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+     .btn-group {
+          max-width: 340px;
+
+     }
+   }
+
+.btn {
+     width: 128px;
+     height: 60px;
+     margin: 1%;
+     font-family:sans-serif;
+     font-weight: bold;
+  
+     text-align:center;
+     padding-top: 3%;
+
+     list-style-type: none;
+
+     color: #ffffff;
+     background-color: #2B3643;
+     border-radius: 4px;
+
+     cursor: pointer;
+}
+
+li:hover {
+     color: #FEFFFE;  
+     background-color: #FCC42C;
+}
+li:active {
+     color: #FEFFFE;
+     background-color: #;
+}
+
+/**************************************/
+
+::selection {
+     color: rgb(80, 80, 80);
+     background: #BAECF5;
+}
